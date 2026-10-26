@@ -1,0 +1,9 @@
+# Store text as LF in the repo (consistent across Windows/macOS/Linux).
+* text=auto eol=lf
+
+# Binary assets: never apply EOL or whitespace munging.
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary

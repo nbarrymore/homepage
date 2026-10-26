@@ -1,0 +1,265 @@
+% Curriculum Vitae, Nathan Barrymore -- PUBLIC (website) version.
+% Identical to Barrymore-CV.tex except that working-paper statuses omit journal names
+% (NB, 2026-10-26). Keep the two in sync.
+% LaTeX replica of "Barrymore - CV - 9-19-26.docx" (NB's edits of 2026-09-27), with corrections:
+% "Texas at Austin"; "The Wharton School"; Dezső / Cristian throughout; California title ends in
+% "Mandate"; R&R names the journal; grant names the project; ARCS year restored on "Green or
+% greenwashing?"; GOV 312L described from its syllabi (spring term, May session in D.C.);
+% titles in sentence case; serial commas and en-dashes made consistent.
+% Compile: pdflatex Barrymore-CV.tex
+
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[lining]{ebgaramond}
+\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{microtype}
+\usepackage{needspace}
+
+\pagestyle{fancy}
+\fancyhf{}
+\cfoot{\small\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\fancypagestyle{first}{\fancyhf{}\rhead{\small\textit{Updated October 2026}}\cfoot{\small\thepage}}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+\titleformat{\section}{\normalfont\bfseries\scshape}{}{0pt}{}[\vspace{-6pt}\rule{\textwidth}{0.4pt}]
+\titlespacing*{\section}{0pt}{14pt}{6pt}
+
+% entry with bold heading and right-aligned date, then a second line
+\newcommand{\entry}[3]{\textbf{#1}\hfill #2\\#3\par\vspace{7pt}}
+% bibliography-style item with hanging indent
+\newcommand{\pub}[1]{#1\par\vspace{6pt}}
+\newcommand{\bib}[1]{#1\par\vspace{6pt}}
+% presentation: citation, then indented venue line
+\newcommand{\pres}[2]{\needspace{4\baselineskip}\bib{#1}\vspace{-5pt}{\leftskip=0.3in #2\par}\vspace{7pt}}
+% job: organization + place, title + dates, bullets
+\newcommand{\job}[4]{\needspace{5\baselineskip}\textbf{#1}\hfill #2\\\textit{#3}\hfill #4\par}
+\setlist[itemize]{leftmargin=0.3in, topsep=1pt, itemsep=0pt, parsep=0pt, label=\textbullet}
+% two-column line: left text, right date
+\newcommand{\lr}[2]{#1\hfill #2\par}
+
+\newcommand{\SMJ}{\textit{Strategic Management Journal}}
+
+\begin{document}
+\thispagestyle{first}
+
+\begin{center}
+  {\Large\textbf{Nathan Barrymore}}
+\end{center}
+\vspace{2pt}
+
+\begin{minipage}[t]{0.5\textwidth}
+University of Texas at Austin\\
+McCombs School of Business\\
+2110 Speedway, Austin, TX 78705
+\end{minipage}%
+\begin{minipage}[t]{0.5\textwidth}
+\raggedleft
+\href{mailto:nathan.barrymore@mccombs.utexas.edu}{nathan.barrymore@mccombs.utexas.edu}\\
+\href{https://nathanbarrymore.com}{nathanbarrymore.com}
+\end{minipage}
+
+% =====================================================================
+\section*{Academic Positions}
+
+\entry{University of Texas at Austin, McCombs School of Business}{2022\,--\,present}
+      {Assistant Professor of Business, Government and Society}
+\entry{University of Pennsylvania, The Wharton School}{2022\,--\,present}
+      {Research Fellow, Impact, Value, and Sustainable Business Initiative}
+
+% =====================================================================
+\section*{Education}
+
+\entry{University of Maryland, Robert H.\ Smith School of Business}{2022}
+      {Ph.D., Managerial Economics}
+\entry{Claremont McKenna College}{2009}
+      {B.A., Philosophy, Politics and Economics, with Honors, \textit{cum laude}}
+\textbf{Universidad Autónoma de Madrid}\hfill 2006\par
+
+% =====================================================================
+\section*{Publications}
+
+\pub{Barrymore, Nathan, Cristian L.\ Dezső, and Ben King. 2022. ``Gender and competitiveness when
+earning for others: Experimental evidence and implications for sponsorship.'' \SMJ, 43(5):
+905--934.}
+
+% =====================================================================
+\section*{Working Papers}
+
+\pub{Barrymore, Nathan, and Tiantian Yang. ``Diverse routes to leadership: Gender and racial
+differences in internal and external promotions.'' \textit{Revise and resubmit.}}
+
+\pub{Barrymore, Nathan, and Rachelle C.\ Sampson. ``Short-term quotas, long-term change? Evidence
+from California's repealed board diversity mandate.'' \textit{Submitted.}}
+
+\pub{Barrymore, Nathan, Mark DesJardine, and Mae McDonnell. ``Ratified change: How the revealed
+preferences of shareholders shape activist campaigns.''}
+
+\pub{Barrymore, Nathan, and Nicholas Hallman. ``A general approach for creating structured data
+from corporate filings.''}
+
+\pub{Barrymore, Nathan, Cristian L.\ Dezső, and Yongyi Lin. ``Are there gender differences in
+ambition? Evidence from an online experiment.''}
+
+\pub{Datta, Arun, David Harrison, and Nathan Barrymore. ``Understanding compensation dynamics at the
+top: Does power differentially determine pay for ethnic minority CEOs?''}
+
+% =====================================================================
+\section*{Works in Progress}
+
+\pub{Barrymore, Nathan. ``Green or greenwashing? How manager and investor preferences shape firm
+strategy.''}
+
+\pub{Green, Paul, Nathan Barrymore, and Jamie Strassman. ``My step back, their step forward: Gender,
+boomerang mentors, and external mobility.''}
+
+\pub{Barrymore, Nathan, and Jamie Strassman. ``Placement during peril: Using theories of status and
+uncertainty to understand whether and when women face a glass cliff.''}
+
+\pub{Barrymore, Nathan, and Rachelle C.\ Sampson. ``ESG performance and labor productivity:
+Exploring whether and when ESG affects firm performance.''}
+
+\pub{Barrymore, Nathan, and Rachelle C.\ Sampson. ``When can employers pay poverty wages? The
+relationship between living wages, monopsony, and employee turnover.''}
+
+% =====================================================================
+\section*{Conference and Invited Presentations}
+
+\pres{Barrymore, Nathan, and Rachelle C.\ Sampson. ``Short-term quotas, long-term change? Evidence
+from California's repealed board diversity mandate.''}
+{Bloomberg Center for Cities Urban Research Conference (2025), University of
+Utah\textsuperscript{\textdagger} (2026), Academy of Management Annual Meeting (2026), NYU Nonmarket
+Strategy Workshop (2026)}
+
+\pres{Barrymore, Nathan, and Tiantian Yang. ``Diverse routes to leadership: Gender and racial
+differences in internal and external promotions.''}
+{Academy of Management Annual Meeting (2025), Economic Sociology Conference* (2024), People and
+Organizations Conference* (2024), Strategic Management Society Annual Conference* (2023)}
+
+\pres{Barrymore, Nathan, Mark DesJardine, and Mae McDonnell. ``Who stays, who goes? Board gender
+diversity in the wake of financial activism.''}
+{Academy of Management Annual Meeting* (2025), Strategic Management Society Annual Conference*
+(2025)}
+
+\pres{Green, Paul, Nathan Barrymore, and Jamie Strassman. ``My step back, their step forward:
+Gender, boomerang mentors, and external mobility.''}
+{Academy of Management Annual Meeting (2025), Strategic Management Society Annual Conference (2025),
+People and Organizations Conference (2025)}
+
+\pres{Barrymore, Nathan, Cristian L.\ Dezső, and Yongyi Lin. ``Are there gender differences in
+ambition? Evidence from an online experiment.''}
+{Dauphine University, Paris, invited talk (2024)}
+
+\pres{Barrymore, Nathan, and Jamie Strassman. ``Placement during peril: Using theories of status and
+uncertainty to understand whether and when women face a glass cliff.''}
+{Academy of Management Annual Meeting*\textsuperscript{\textdagger} (2024)}
+
+\pres{Barrymore, Nathan, and Rachelle C.\ Sampson. ``When can employers pay poverty wages? The
+relationship between living wages, monopsony, and employee turnover.''}
+{Academy of Management Annual Meeting (2023), Alliance for Research on Corporate Sustainability
+Annual Meeting (2023)}
+
+\pres{Barrymore, Nathan, Cristian L.\ Dezső, and Ben King. ``Gender and competitiveness when earning
+for others: Experimental evidence and implications for sponsorship.''}
+{Academy of Management Annual Meeting\textsuperscript{\textdagger} (2021), Strategic Management
+Society Annual Conference\textsuperscript{\textdagger} (2020)}
+
+\pres{Barrymore, Nathan. ``Green or greenwashing? How manager and investor preferences shape firm
+strategy.''}
+{Alliance for Research on Corporate Sustainability Annual Meeting (2022), Academy of Management
+Annual Meeting (2021), European Group for Organizational Studies, EGOS (2021)}
+
+\pres{Barrymore, Nathan, and Rachelle C.\ Sampson. ``ESG performance and labor productivity:
+Exploring whether and when ESG affects firm performance.''}
+{Alliance for Research on Corporate Sustainability Annual Meeting (2021), Strategy Science
+Conference (2021), Academy of Management Annual Meeting (2021), Strategic Management Society Annual
+Conference (2020)}
+
+{\small * Presented under an earlier title;\quad \textsuperscript{\textdagger}\,presented by a
+coauthor}
+
+% =====================================================================
+\section*{Grants and Awards}
+
+\bib{McCombs Research Excellence Grant, \$20,000, with Nicholas Hallman, for ``A general approach for
+creating structured data from corporate filings'' (2026)}
+\bib{Outstanding Paper Award, Alliance for Research on Corporate Sustainability Annual Meeting (2022)}
+\bib{Nominee, Best PhD Student Paper, Academy of Management Annual Meeting (2021)}
+
+% =====================================================================
+\section*{University Teaching Experience}
+
+McCombs Faculty Honor Roll (2022, 2023); Best MBA Elective nominee (2023, 2026)\par\vspace{8pt}
+
+\textbf{Strategic Corporate Social Responsibility}\hfill University of Texas at Austin\\
+Undergraduate overall instructor ratings (out of 5.0): 5.0, 4.9, 5.0, 4.9\hfill 2022\,--\,2025\\
+MBA overall instructor ratings (out of 5.0): 4.8, 4.8, 4.8\par\vspace{7pt}
+
+\textbf{Strategy Beyond Markets}\hfill University of Texas at Austin\\
+Co-taught core course, overall instructor ratings (out of 5.0): 4.7, 4.4\hfill 2025\par\vspace{7pt}
+
+\textbf{Issues and Politics in American Government}\hfill University of Texas at Austin\\
+Spring course taught in Austin, ending with a one-week session in Washington, D.C.\hfill
+2024\,--\,2025\par\vspace{7pt}
+
+\textbf{International Business Management}\hfill University of Maryland\\
+Overall instructor rating (out of 4.0): 3.9\hfill 2019\par
+
+% =====================================================================
+\newpage
+\section*{Professional Experience}
+
+\job{Nomura Investment Management Advisors (formerly Macquarie)}{Philadelphia, Pennsylvania}
+    {Consultant}{2021\,--\,present}
+\begin{itemize}
+  \item Developed and oversee the ESG framework with the company's Sustainable Development Goals
+        Oversight Committee
+\end{itemize}
+\vspace{7pt}
+
+\job{Da Vinci Communications High School}{Los Angeles, California}
+    {Founding High School Principal}{2013\,--\,2017}
+\begin{itemize}
+  \item Planned and founded a charter high school; hired and managed all teachers and school staff
+  \item Title I school (majority of students qualified for free meals); graduating students enrolled
+        in University of California schools at over double the state average rate
+\end{itemize}
+\vspace{7pt}
+
+\job{Teach for America}{Los Angeles, California}
+    {Physics and Mathematics Teacher}{2009\,--\,2013}
+\begin{itemize}
+  \item Founding teacher at Da Vinci Design High School
+  \item Taught physics, mathematics, engineering, computer design, government, music, and archery
+\end{itemize}
+\vspace{7pt}
+
+\job{Mercer Consulting}{}{Summer Analyst}{2008}
+\vspace{7pt}
+
+\job{Professional Mariachi}{}{Guitarrón}{2008\,--\,2013}
+Mariachi Nueva Generación, Mariachi Uclatlán, Mariachi Serrano\par
+
+% =====================================================================
+\section*{Professional Service}
+
+\textbf{Editorial Review Board}\par
+\lr{\SMJ}{2022\,--\,present}
+\vspace{7pt}
+
+\textbf{Ad Hoc Reviewer}\par
+\lr{\textit{Management Science}}{2021\,--\,present}
+\lr{\textit{Organization Science}}{2023\,--\,present}
+\lr{\textit{Strategy Science}}{2023\,--\,present}
+\lr{\SMJ}{2021\,--\,2022}
+
+\end{document}

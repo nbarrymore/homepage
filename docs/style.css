@@ -1,0 +1,162 @@
+/* nathanbarrymore.com: one stylesheet for every page. */
+
+/* Palette carried over from the old WordPress site: near-black text, gray nav,
+   violet links, light-blue tint from the "NB" favicon. */
+:root {
+  --text: #0e1015;
+  --muted: #4c4c4c;
+  --rule: #e5e5e5;
+  --accent: #745cf9;        /* old site's link color; 4.5:1 on white */
+  --banner-bg: #edf7ff;
+  --bg: #ffffff;
+  --serif: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, serif;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--serif);
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+a { color: var(--accent); text-underline-offset: 0.15em; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.wrap {
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Header: name, title, nav */
+
+.site-header {
+  padding: 2.5rem 0 1.25rem;
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 2rem;
+}
+
+.site-name {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.site-name a { color: inherit; text-decoration: none; }
+
+.site-title {
+  margin: 0.25rem 0 1rem;
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.site-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: var(--sans);
+  font-size: 1rem;
+}
+.site-nav a { color: var(--muted); text-decoration: none; padding: 0.25rem 0; }
+.site-nav a:hover { color: var(--accent); }
+.site-nav a[aria-current="page"] {
+  color: var(--accent);
+  border-bottom: 2px solid var(--accent);
+}
+
+main { padding-bottom: 4rem; }
+
+h2 {
+  margin: 2.5rem 0 1rem;
+  font-size: 1.35rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+/* Home */
+
+.banner {
+  margin: 0 0 2rem;
+  padding: 0.9rem 1.1rem;
+  background: var(--banner-bg);
+  border-left: 4px solid var(--accent);
+}
+.banner p { margin: 0; }
+
+.headshot {
+  float: right;
+  width: 16rem;
+  height: auto;
+  margin: 0.35rem 0 1rem 1.75rem;
+  border-radius: 4px;
+}
+
+.profile-links {
+  clear: both;
+  padding-top: 0.5rem;
+  font-family: var(--sans);
+  font-size: 1rem;
+}
+.profile-links { display: flex; align-items: center; gap: 2.75rem; }
+.profile-links img { display: block; }
+.profile-links a:hover img { opacity: 0.75; }
+
+@media (max-width: 36rem) {
+  body { font-size: 1.0625rem; }
+  .site-header { padding-top: 1.75rem; }
+  .site-name { font-size: 1.7rem; }
+  .headshot { float: none; display: block; width: 11rem; margin: 0 0 1.25rem; }
+}
+
+/* Research: one pattern per paper so entries are easy to add and edit */
+
+.questions { padding-left: 1.25rem; }
+.questions li { margin-bottom: 0.6rem; }
+
+.paper { margin: 0 0 1.6rem; }
+.paper-title { margin: 0; font-weight: 600; }
+.paper-meta { margin: 0.1rem 0 0; color: var(--muted); }
+.paper-meta .status { font-style: italic; color: var(--text); }
+.paper-meta .venue { color: var(--text); }
+.paper-summary { margin: 0.35rem 0 0; }
+.paper-note { margin: 0.35rem 0 0; font-style: italic; }
+
+/* Data */
+
+.data-card {
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+}
+.data-card h2 { margin-top: 0; }
+.data-card .coming { color: var(--muted); font-style: italic; margin-bottom: 0; }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* Visible draft marker. Nothing marked .todo should be on the live site. */
+.todo {
+  background: #fff3a8;
+  color: #000;
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  padding: 0.1rem 0.35rem;
+}
